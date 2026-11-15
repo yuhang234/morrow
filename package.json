@@ -1,7 +1,7 @@
 {
   "name": "morrow",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Morrow —— 一次只做一件事，增援未来的自己。本地优先的反拖延应用。",
   "type": "module",
   "main": "electron/main.cjs",
