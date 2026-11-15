@@ -22,7 +22,7 @@ Morrow 取意 **「明天 / 未来」**。它延续了同一个核心理念：**
 
 | 产物 | 路径 | 说明 |
 |---|---|---|
-| Windows 安装包 | `release/Morrow-1.0.0-win-x64-setup.exe` | NSIS 安装程序，双击安装，可选安装目录 |
+| Windows 安装包 | `release/Morrow-1.0.1-win-x64-setup.exe` | NSIS 安装程序，双击安装，可选安装目录 |
 | Windows 免安装版 | `release/win-unpacked/Morrow.exe` | 绿色免安装，直接运行 |
 | Android 安装包 | `android/app/build/outputs/apk/debug/app-debug.apk` | 调试签名，可直接安装 |
 | 完整源码 | 项目根目录 | React + TypeScript + Vite |
@@ -66,7 +66,7 @@ Morrow 取意 **「明天 / 未来」**。它延续了同一个核心理念：**
 
 ### 安装
 
-1. 双击 `release/Morrow-1.0.0-win-x64-setup.exe`。
+1. 双击 `release/Morrow-1.0.1-win-x64-setup.exe`。
 2. 选择安装目录（默认当前用户目录，无需管理员权限）。
 3. 安装完成后桌面 / 开始菜单会出现「Morrow」快捷方式。
 
