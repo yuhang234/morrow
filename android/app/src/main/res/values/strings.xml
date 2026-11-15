@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Morrow</string>
+    <string name="title_activity_main">Morrow</string>
+    <string name="package_name">com.morrow.app</string>
+    <string name="custom_url_scheme">com.morrow.app</string>
+</resources>

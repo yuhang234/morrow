@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  允许明文 HTTP：部分自建 WebDAV 服务器（NAS / 局域网）使用 http://。
+  Android 9+ 默认禁止明文流量，这里显式放行，以便用户连接任意 WebDAV 地址。
+  生产环境建议使用 https。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

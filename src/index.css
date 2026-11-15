@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: theme('colors.cream.100');
+  color: theme('colors.ink.900');
+  font-family: theme('fontFamily.sans');
+  overscroll-behavior-y: none;
+}
+
+.dark body {
+  background-color: theme('colors.night.900');
+  color: theme('colors.cream.200');
+}
+
+/* refine scrollbar */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: theme('colors.ink.300');
+  border-radius: 9999px;
+}
+.dark *::-webkit-scrollbar-thumb {
+  background: theme('colors.night.600');
+}
+
+/* utility for safe-area on mobile */
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* focus visibility */
+:where(button, a, input, textarea, summary):focus-visible {
+  outline: 2px solid theme('colors.orange.peel');
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* prevent text selection on icon buttons */
+button {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
